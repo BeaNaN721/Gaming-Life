@@ -3,7 +3,7 @@ import { CheckinService } from './checkin.service';
 import { CreateCheckinDto } from './checkin.dto';
 import { AuthGuard } from '@nestjs/passport';
 
-@Controller('checkin')
+@Controller('checkins')
 @UseGuards(AuthGuard('jwt'))
 export class CheckinController {
   constructor(private readonly checkinService: CheckinService){}

@@ -3,6 +3,7 @@ node_modules/
 
 # Build
 dist/
+dist-ssr/
 *.tsbuildinfo
 
 # Environment (keep .env.example as template)
@@ -12,10 +13,24 @@ dist/
 
 # Test
 coverage/
+__screenshots__/
+cypress/videos/
+cypress/screenshots/
+
+# Cache
+.eslintcache
+*.timestamp-*-*.mjs
 
 # Logs
+logs/
 *.log
+npm-debug.log*
+yarn-debug.log*
 pnpm-debug.log*
+lerna-debug.log*
+
+# Local overrides (Vite)
+*.local
 
 # OS
 .DS_Store
@@ -23,5 +38,12 @@ Thumbs.db
 
 # IDE
 .idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
 .vscode/*
 !.vscode/extensions.json
+!.vscode/settings.json
